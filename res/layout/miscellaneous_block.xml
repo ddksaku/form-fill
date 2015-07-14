@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- miscellaneous -->
+<LinearLayout
+   	xmlns:android="http://schemas.android.com/apk/res/android"
+ 	xmlns:custom="http://schemas.android.com/apk/res/com.development.visualscope"
+    android:id="@+id/apartmentBlockLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">		           
+	<com.development.visualscope.ExpandablePanel	            
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		custom:animationDuration="@integer/expandablePanelAnimationDuration"
+		custom:collapsedHeight="@dimen/expandablePanelCollapsedHeight"
+		custom:content="@+id/miscellaneousLinearLayout"
+		custom:handle="@+id/miscellaneousButton">
+					
+		<Button
+			   android:id="@+id/miscellaneousButton"
+			   android:layout_width="match_parent"
+			   android:layout_height="wrap_content"
+			   style="@style/expandablePanelButton"                                                          
+			   android:text="@string/miscellaneous" />	                               
+							 
+		<LinearLayout
+			android:id="@+id/miscellaneousLinearLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="@dimen/activityLayoutPadding">
+			
+			<com.development.visualscope.ValueTableRow	
+				android:id="@+id/valueTableRow1"	                    				         	                   
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />
+			
+			<com.development.visualscope.ValueTableRow
+				android:id="@+id/valueTableRow2"				         
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />
+			
+			<com.development.visualscope.ValueTableRow	
+				android:id="@+id/valueTableRow3"	                    				         	                   
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />
+			
+			<com.development.visualscope.ValueTableRow
+				android:id="@+id/valueTableRow4"				         
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />
+			
+			<com.development.visualscope.ValueTableRow	
+				android:id="@+id/valueTableRow5"	                    				         	                   
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />
+			
+			<com.development.visualscope.ValueTableRow
+				android:id="@+id/valueTableRow6"				         
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />
+			
+			<com.development.visualscope.ValueTableRow	
+				android:id="@+id/valueTableRow7"	                    				         	                   
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />
+			
+			<com.development.visualscope.ValueTableRow
+				android:id="@+id/valueTableRow8"				         
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />
+			
+			<com.development.visualscope.ValueTableRow	
+				android:id="@+id/valueTableRow9"	                    				         	                   
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />
+			
+			<com.development.visualscope.ValueTableRow
+				android:id="@+id/valueTableRow10"				         
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />
+			
+			<com.development.visualscope.ValueTableRow	
+				android:id="@+id/valueTableRow11"	                    				         	                   
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />
+			
+			<com.development.visualscope.ValueTableRow
+				android:id="@+id/valueTableRow12"				         
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />
+			
+			<com.development.visualscope.ValueTableRow	
+				android:id="@+id/valueTableRow13"	                    				         	                   
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />
+			
+			<com.development.visualscope.ValueTableRow
+				android:id="@+id/valueTableRow14"				         
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />
+			
+			<com.development.visualscope.ValueTableRow	
+				android:id="@+id/valueTableRow15"	                    				         	                   
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />
+			
+			<com.development.visualscope.ValueTableRow
+				android:id="@+id/valueTableRow16"				         
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />
+			
+			<com.development.visualscope.ValueTableRow	
+				android:id="@+id/valueTableRow17"	                    				         	                   
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />
+			
+			<com.development.visualscope.ValueTableRow
+				android:id="@+id/valueTableRow18"				         
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />
+			
+			<com.development.visualscope.ValueTableRow
+				android:id="@+id/valueTableRow19"				         
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />
+			
+			<com.development.visualscope.ValueTableRow
+				android:id="@+id/valueTableRow20"				         
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />	                	               
+													
+			<EditText
+			    android:id="@+id/miscellaneousNoteEdit"	                    
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 	    
+				android:inputType="textMultiLine"            	
+				android:hint="@string/notes"	                	
+				android:layout_marginBottom="@dimen/cellMargin"
+				android:lines="2"
+				android:gravity="top|left"
+				android:scrollbars="vertical" />				        					               
+		</LinearLayout>				
+	</com.development.visualscope.ExpandablePanel>	 			 
+</LinearLayout>

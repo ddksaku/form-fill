@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.development.visualscope.HomeActivity$PlaceholderFragment" >
+	        
+    <TextView        
+        android:text="@string/home"
+        style="@style/titleText" />                
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:padding="@dimen/activityLayoutPadding">	    
+	    
+	    <ImageView
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/ic_launcher"
+		    android:layout_marginTop="70dp" />
+	    
+	    <TableLayout 
+	        android:layout_height="match_parent"
+	   		android:layout_width="match_parent" 
+	   		android:stretchColumns="*" 
+	   		android:gravity="center">	   		
+	   		    		  
+	   		<TableRow
+	   		    android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:paddingBottom="5dp">
+	    		<Button 	    		    
+	     			android:layout_width="match_parent"      			
+	     			android:layout_height="wrap_content"
+	     			style="@style/customButton"
+	     			android:text="@string/create_new"
+	     			android:onClick="createNewProject" />	    		
+	    			    			    
+	       	</TableRow>            
+	       	
+	   		<TableRow
+	   		    android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:paddingBottom="5dp">
+	   			<Button 	    		    
+	     			android:layout_width="match_parent"      			
+	     			android:layout_height="wrap_content"
+	     			style="@style/customButton"
+	     			android:text="Edit projects"
+	     			android:onClick="editProjects" />
+	   		</TableRow>
+	   		
+	   		<TableRow
+	   		    android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:paddingBottom="5dp">
+	   			<Button 	    		    
+	     			android:layout_width="match_parent"      			
+	     			android:layout_height="wrap_content"
+	     			style="@style/customButton"
+	     			android:text="@string/show_all"
+	     			android:onClick="showAllProjects" />
+	   		</TableRow>
+	   			
+		</TableLayout>
+	</LinearLayout>
+	
+</LinearLayout>

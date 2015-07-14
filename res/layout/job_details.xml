@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:example="http://schemas.android.com/apk/res/com.development.visualscope"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical">
+  		
+  	<!-- <com.development.visualscope.ExpandablePanel	            
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		example:animationDuration="@integer/expandablePanelAnimationDuration"
+		example:collapsedHeight="@dimen/expandablePanelCollapsedHeight"
+		example:content="@+id/jobDetailLinearLayout"
+		example:handle="@+id/jobDetailButton">
+	
+		<Button
+			android:id="@id/jobDetailButton"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/expandablePanelButton"                                                          
+			android:text="@string/job_details" /> -->	                               
+			 
+		<LinearLayout
+			android:id="@+id/jobDetailLinearLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<!-- android:padding="@dimen/activityLayoutPadding"> -->
+		
+		    <TextView			
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				style="@style/panelText"                 			                                        
+				android:text="@string/job_details"
+				android:layout_marginTop="@dimen/cellMargin" 
+				android:layout_marginBottom="@dimen/cellMargin" />
+		    
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginBottom="@dimen/cellMargin">
+				<TextView	                    
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 	                	
+					android:text="@string/water_spigot_avaliable"
+					android:layout_marginRight="@dimen/cellMargin" />
+				
+				<Spinner	     
+				    android:id="@+id/waterAvaliableSpinner"               
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+			
+			<HorizontalScrollView    	
+		    	android:layout_width="match_parent"
+		    	android:layout_height="match_parent">
+				<TableLayout 
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content" 
+					android:stretchColumns="*" 
+					android:gravity="center"
+					android:layout_marginBottom="@dimen/cellMargin">
+					
+					<TableRow
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<CheckBox 	    		    
+						    android:id="@+id/waterColdCheckBox"
+							android:layout_width="match_parent"      			
+							android:layout_height="wrap_content"
+							android:text="@string/cold_water_needed" />	    		
+						
+						<CheckBox
+						    android:id="@+id/waterHotCheckBox" 	    		    
+							android:layout_width="match_parent"      			
+							android:layout_height="wrap_content"
+							android:text="@string/hot_water_needed" />	    		
+					</TableRow>
+					
+					<TableRow
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<CheckBox 	    		    
+						    android:id="@+id/waterHydrantCheckBox"
+							android:layout_width="match_parent"      			
+							android:layout_height="wrap_content"
+							android:text="@string/hydrant_permit" />	    		
+						
+						<CheckBox 	    		    
+						    android:id="@+id/waterScafoldingCheckBox"
+							android:layout_width="match_parent"      			
+							android:layout_height="wrap_content"
+							android:text="@string/scafolding_needed" />	    		
+					</TableRow>
+					
+					<TableRow
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<CheckBox
+						    android:id="@+id/waterHarnessCheckBox" 	    		    
+							android:layout_width="match_parent"      			
+							android:layout_height="wrap_content"
+							android:text="@string/harness_needed" />	    		
+						
+						<CheckBox 	    		    
+						    android:id="@+id/waterParkingCheckBox"
+							android:layout_width="match_parent"      			
+							android:layout_height="wrap_content"
+							android:text="@string/parking" />	    		
+					</TableRow>
+					
+					<TableRow
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<CheckBox 	    		    
+						    android:id="@+id/waterParkingStreetCheckBox"
+							android:layout_width="match_parent"      			
+							android:layout_height="wrap_content"
+							android:text="@string/parking_on_the_street" />	    		
+						
+						<CheckBox 	    		    
+						    android:id="@+id/waterParkingLotCheckBox"
+							android:layout_width="match_parent"      			
+							android:layout_height="wrap_content"
+							android:text="@string/parking_in_a_lot" />	    		
+					</TableRow>
+					
+					<TableRow
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<CheckBox 	    		    
+						    android:id="@+id/waterLiftNeededCheckBox"
+							android:layout_width="match_parent"      			
+							android:layout_height="wrap_content"
+							android:text="@string/lift_needed" />	    													    
+					</TableRow>
+				</TableLayout>
+			</HorizontalScrollView>
+			
+			<TextView	                    
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 	                	
+				android:text="@string/special_procedures"
+				android:layout_marginBottom="@dimen/cellMargin" />
+			
+			<HorizontalScrollView    	
+		    	android:layout_width="match_parent"
+		    	android:layout_height="match_parent">
+				<TableLayout 
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content" 
+					android:stretchColumns="*" 
+					android:gravity="center"
+					android:layout_marginBottom="@dimen/cellMargin">
+					
+					<TableRow
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<CheckBox 	    		    
+						    android:id="@+id/waterMildewCheckBox"
+							android:layout_width="match_parent"      			
+							android:layout_height="wrap_content"
+							android:text="@string/mildew_release" />	    		
+						
+						<CheckBox 	    		    
+						    android:id="@+id/waterOilCheckBox"
+							android:layout_width="match_parent"      			
+							android:layout_height="wrap_content"
+							android:text="@string/oil_emulsion" />	    		
+					</TableRow>
+					
+					<TableRow
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<CheckBox 	    		    
+						    android:id="@+id/waterEnzymeMicrobesCheckBox"
+							android:layout_width="match_parent"      			
+							android:layout_height="wrap_content"
+							android:text="@string/enzyme_microbes" />	    		
+						
+						<CheckBox 	    		    
+						    android:id="@+id/waterMildewcideCheckBox"
+							android:layout_width="match_parent"      			
+							android:layout_height="wrap_content"
+							android:text="@string/mildewcide" />	    		
+					</TableRow>
+					
+					<TableRow
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<CheckBox 	    		    
+						    android:id="@+id/waterEnzymesCheckBox"					    
+							android:layout_width="match_parent"      			
+							android:layout_height="wrap_content"
+							android:text="@string/enzymes" />	    													    
+					</TableRow>
+				</TableLayout>
+			</HorizontalScrollView>
+			
+			<EditText
+				android:id="@+id/additionalNoteInJobEdit"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 	    
+				android:inputType="textMultiLine"            	
+				android:hint="@string/general_additional_project_notes"	                	
+				android:layout_marginBottom="@dimen/cellMargin"
+				android:lines="2"
+				android:gravity="top|left"
+				android:scrollbars="vertical" />
+		</LinearLayout>	 
+	<!-- </com.development.visualscope.ExpandablePanel> -->				       	
+</LinearLayout>

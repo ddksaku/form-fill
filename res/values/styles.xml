@@ -1,0 +1,56 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="titleText" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>        
+        <item name="android:background">#FFC3C3C3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">25sp</item>                                
+    </style>
+        
+    <style name="expandablePanelButton" parent="@android:style/Widget.Button">
+        <item name="android:gravity">left|center_vertical</item>
+        <!-- 
+        <item name="android:background">#2F6515</item>        
+        <item name="android:textColor">#FFFFFF</item>
+         -->                                      
+        <item name="android:textColor">#FFFFFFFF</item>        
+        <item name="android:drawableRight">@drawable/plus_icon</item>
+        <item name="android:background">@drawable/expandable_button</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:paddingLeft">20dp</item>                                       
+        <item name="android:paddingRight">10dp</item>
+    </style>
+    
+    <style name="customButton" parent="@android:style/Widget.Button">
+        <item name="android:gravity">center</item>        
+        <item name="android:textColor">#FFFFFFFF</item>              
+        <item name="android:background">@drawable/expandable_button</item>       
+        <item name="android:paddingLeft">3dp</item>                                       
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:layout_marginLeft">3dp</item>                                       
+        <item name="android:layout_marginRight">3dp</item>
+    </style>
+    
+    <style name="panelText" parent="@android:style/Widget.TextView">        
+        <item name="android:textStyle">bold</item>                                      
+    </style>
+
+</resources>

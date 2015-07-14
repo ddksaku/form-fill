@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- apartment -->
+<LinearLayout
+   	xmlns:android="http://schemas.android.com/apk/res/android"
+ 	xmlns:custom="http://schemas.android.com/apk/res/com.development.visualscope"
+    android:id="@+id/apartmentBlockLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+	<com.development.visualscope.ExpandablePanel	            
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           custom:animationDuration="@integer/expandablePanelAnimationDuration"
+           custom:collapsedHeight="@dimen/expandablePanelCollapsedHeight"
+           custom:content="@+id/apartmentLinearLayout"
+           custom:handle="@+id/apartmentButton">
+	 
+           <Button
+                  android:id="@+id/apartmentButton"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  style="@style/expandablePanelButton"                                                          
+                  android:text="@string/apartment_building" />	                                                                       	            
+					
+           <LinearLayout
+               android:id="@+id/apartmentLinearLayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:padding="@dimen/activityLayoutPadding">	                	               
+           	                
+               <TableLayout 
+		        android:layout_height="wrap_content"
+		   		android:layout_width="wrap_content" 
+		   		android:stretchColumns="*" 
+		   		android:gravity="center">
+		   		
+		   		<TableRow
+		   		    android:layout_width="match_parent"
+		    		android:layout_height="wrap_content"
+		    		android:layout_marginBottom="@dimen/cellMargin">				    						    		    				    
+		    		<EditText
+	                    android:id="@+id/apartmentSqftEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/sq_ft" />
+		    		
+		    		<EditText
+	                    android:id="@+id/apartmentSqftMultiplierEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/multiplier" />
+		    		
+		    		<EditText
+	                    android:id="@+id/apartmentSqftInfoEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/info" />	    												    			   
+		       	</TableRow>
+		       	
+		   		<TableRow
+		   		    android:layout_width="match_parent"
+		    		android:layout_height="wrap_content"
+		    		android:layout_marginBottom="@dimen/cellMargin">
+		    		<EditText
+	                    android:id="@+id/apartmentBuildingsEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/buildings" />
+		    		
+		    		<EditText
+	                    android:id="@+id/apartmentBuildingsMultiplierEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/multiplier" />
+		    		
+		    		<EditText
+	                    android:id="@+id/apartmentBuildingsInfoEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/info" />	    						    						    			    
+		       	</TableRow>
+		       	
+		   		<TableRow
+		   		    android:layout_width="match_parent"
+		    		android:layout_height="wrap_content"
+		    		android:layout_marginBottom="@dimen/cellMargin">
+		    		<EditText
+	                    android:id="@+id/apartmentUnitsEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/units" />
+		    		
+		    		<EditText
+	                    android:id="@+id/apartmentUnitsMultiplierEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/multiplier" />
+		    		
+		    		<EditText
+	                    android:id="@+id/apartmentUnitsInfoEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/info" />	    						    						    			    
+		       	</TableRow>
+		       	
+		   		<TableRow
+		   		    android:layout_width="match_parent"
+		    		android:layout_height="wrap_content"
+		    		android:layout_marginBottom="@dimen/cellMargin">
+		    		<EditText
+	                    android:id="@+id/apartmentParkingEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/parking_stalls" />
+		    		
+		    		<EditText
+	                    android:id="@+id/apartmentParkingMultiplierEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/multiplier" />
+		    		
+		    		<EditText
+	                    android:id="@+id/apartmentParkingInfoEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/info" />	    						    						    			    
+		       	</TableRow>
+		       	
+		   		<TableRow
+		   		    android:layout_width="match_parent"
+		    		android:layout_height="wrap_content"
+		    		android:layout_marginBottom="@dimen/cellMargin">
+		    		<EditText
+	                    android:id="@+id/apartmentCarEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/car_ports" />
+		    		
+		    		<EditText
+	                    android:id="@+id/apartmentCarMultiplierEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/multiplier" />
+		    		
+		    		<EditText
+	                    android:id="@+id/apartmentCarInfoEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/info" />	    						    						    			    
+		       	</TableRow>
+		       	
+		   		<TableRow
+		   		    android:layout_width="match_parent"
+		    		android:layout_height="wrap_content"
+		    		android:layout_marginBottom="@dimen/cellMargin">
+		    		<EditText
+	                    android:id="@+id/apartmentStairwaysEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/stairways" />
+		    		
+		    		<EditText
+	                    android:id="@+id/apartmentStairwaysMultiplierEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/multiplier" />
+		    		
+		    		<EditText
+	                    android:id="@+id/apartmentStairwaysInfoEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/info" />	    						    						    			    
+		       	</TableRow>
+		       					   		
+		   		<TableRow
+		   		    android:layout_width="match_parent"
+		    		android:layout_height="wrap_content"
+		    		android:layout_marginBottom="@dimen/cellMargin">
+		    		<EditText
+	                    android:id="@+id/apartmentRailingsEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/railings" />
+		    		
+		    		<EditText
+	                    android:id="@+id/apartmentRailingsMultiplierEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/multiplier" />
+		    		
+		    		<EditText
+	                    android:id="@+id/apartmentRailingsInfoEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/info" />	    						    						    			    
+		       	</TableRow>
+		       					       	 
+		   		<TableRow
+		   		    android:layout_width="match_parent"
+		    		android:layout_height="wrap_content"
+		    		android:layout_marginBottom="@dimen/cellMargin">
+		    		<EditText
+	                    android:id="@+id/apartmentStoriesEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/stories" />
+				</TableRow>
+				
+		   		<TableRow
+		   		    android:layout_width="match_parent"
+		    		android:layout_height="wrap_content"
+		    		android:layout_marginBottom="@dimen/cellMargin">
+		    		<EditText
+	                    android:id="@+id/apartmentBreezyEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/breezeway" />
+		    		
+		    		<EditText
+	                    android:id="@+id/apartmentBreezyMultiplierEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/multiplier" />
+		    		
+		    		<EditText
+	                    android:id="@+id/apartmentBreezyInfoEdit"
+	                    android:layout_width="match_parent"
+	                	android:layout_height="wrap_content" 
+	                	android:inputType="text"
+	                	android:hint="@string/info" />	    						    						    			    
+		       	</TableRow>
+			</TableLayout>										 
+			 
+			<com.development.visualscope.SidingType		   
+			    android:id="@+id/apartmentSidingType"                 	                    				         	                  
+		        android:layout_width ="wrap_content"
+		        android:layout_height ="wrap_content" />
+			
+               <EditText
+                   	android:id="@+id/apartmentOtherEdit"
+                   	android:layout_width="match_parent"
+               		android:layout_height="wrap_content" 
+               		android:inputType="text"
+               		android:hint="@string/other"
+               		android:layout_marginBottom="@dimen/cellMargin" />
+               
+               <com.development.visualscope.LiftNeeded
+                   android:id="@+id/apartmentLiftNeeded"		                    	                    				         	                  
+		        	android:layout_width ="wrap_content"
+		        	android:layout_height ="wrap_content" />
+               
+               <com.development.visualscope.Environmental
+                   android:id="@+id/apartmentEnvironmental"	                    				        
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content" />
+               
+               <com.development.visualscope.Walkways	    
+                   	android:id="@+id/apartmentWalkways"                				        
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content" 
+			        custom:walkwaysPanelName="@string/walkways" />
+				
+				<com.development.visualscope.JobDetails
+				    android:id="@+id/apartmentJobDetails"	                    				        
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        custom:isParkingPanel="false" />			
+			        
+				<com.development.visualscope.Roofs	     
+				    android:id="@+id/apartmentRoofs"               				        
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content" 
+			        custom:isMetalCheckBoxVisible="true" />
+	
+			</LinearLayout>								         				  
+		</com.development.visualscope.ExpandablePanel>            	 								        		 
+</LinearLayout>

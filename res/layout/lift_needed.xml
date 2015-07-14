@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent" 
+	android:stretchColumns="*" 
+	android:gravity="center">  		  
+   	<TableRow
+		android:layout_width="match_parent"
+   		android:layout_height="wrap_content">
+   		<CheckBox
+   		    android:id="@+id/liftNeededCheckBox" 	    		    
+   			android:layout_width="match_parent"      			
+   			android:layout_height="wrap_content"
+   			android:text="@string/lift_needed" />
+   		
+   		<EditText
+            android:id="@+id/amountEdit"
+            android:layout_width="match_parent"
+           	android:layout_height="wrap_content" 
+           	android:inputType="text"
+           	android:hint="@string/amount" />
+   		
+   		<EditText
+            android:id="@+id/daysNeededEdit"
+            android:layout_width="match_parent"
+           	android:layout_height="wrap_content" 
+           	android:inputType="text"
+           	android:hint="@string/days_needed" />	    						    						    			    
+	</TableRow>				       	
+</TableLayout>

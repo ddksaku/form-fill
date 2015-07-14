@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- commerical -->
+<LinearLayout
+   	xmlns:android="http://schemas.android.com/apk/res/android"
+ 	xmlns:custom="http://schemas.android.com/apk/res/com.development.visualscope"
+    android:id="@+id/apartmentBlockLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+	<com.development.visualscope.ExpandablePanel	            
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		custom:animationDuration="@integer/expandablePanelAnimationDuration"
+		custom:collapsedHeight="@dimen/expandablePanelCollapsedHeight"
+		custom:content="@+id/commericalLinearLayout"
+		custom:handle="@+id/commericalButton">
+	 
+		<Button
+			android:id="@+id/commericalButton"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/expandablePanelButton"                                                          
+			android:text="@string/commercial_building" />	                                                                       	            
+					
+		<LinearLayout
+			android:id="@+id/commericalLinearLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="@dimen/activityLayoutPadding">	                	               
+							
+			<TableLayout 
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content" 
+				android:stretchColumns="*" 
+				android:gravity="center">
+				
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/cellMargin">				    						   		    				    
+					<EditText		
+					    android:id="@+id/commericalSqftEdit"	                    
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/sq_ft" />
+					
+					<EditText
+					    android:id="@+id/commericalSqftMultiplierEdit"								
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/multiplier" />								
+					
+					<EditText								
+					    android:id="@+id/commericalSqftInfoEdit"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/info" />	    												    			   
+				</TableRow>
+				
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/cellMargin">
+					<EditText			                   
+					    android:id="@+id/commericalBuildingEdit" 
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/buildings" />
+					
+					<EditText								
+					    android:id="@+id/commericalBuildingMultiplierEdit"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/multiplier" />
+					
+					<EditText								
+					    android:id="@+id/commericalBuildingInfoEdit"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/info" />	    						    						    			    
+				</TableRow>
+				
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/cellMargin">
+					<EditText			                    
+					    android:id="@+id/commericalUnitsEdit"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/units" />
+					
+					<EditText							
+					    android:id="@+id/commericalUnitsMultiplierEdit"	
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/multiplier" />
+					
+					<EditText								
+					    android:id="@+id/commericalUnitsInfoEdit"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/info" />	    						    						    			    
+				</TableRow>				       					   	
+										 
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/cellMargin">
+					<EditText			                    
+					    android:id="@+id/commericalStoriesEdit"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/stories" />
+				</TableRow>
+							
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/cellMargin">
+					<EditText			                  
+					    android:id="@+id/commericalRailingsEdit"  
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/railings" />
+				</TableRow>
+			</TableLayout>										 
+			 
+			<com.development.visualscope.SidingType
+			    android:id="@+id/commericalSidingType"		                    	                    				         	                  
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />						               
+			
+			<com.development.visualscope.LiftNeeded
+			    android:id="@+id/commericalLiftNeeded"		                    	                    				         	                  
+				android:layout_width ="wrap_content"
+				android:layout_height ="wrap_content" />
+			
+			<com.development.visualscope.Environmental	       
+			    android:id="@+id/commericalEnvironmental"             				        
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />			
+				
+			<com.development.visualscope.Walkways	    
+			    android:id="@+id/commericalWalkways"                				        
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 
+				custom:walkwaysPanelName="@string/walkways_concrete" />
+			
+			<com.development.visualscope.JobDetails	       
+			    android:id="@+id/commericalJobDetails"             				        
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				custom:isParkingPanel="false" />			
+				
+			<com.development.visualscope.Roofs	  
+			    android:id="@+id/commericalRoofs"                  				        
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 
+				custom:isMetalCheckBoxVisible="false" />
+		</LinearLayout>			         				    
+	</com.development.visualscope.ExpandablePanel>            							 		
+</LinearLayout>

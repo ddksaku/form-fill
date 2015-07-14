@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical">
+  		
+  	<TextView	                    
+         android:layout_width="match_parent"
+     	android:layout_height="wrap_content" 	                	
+     	android:text="@string/type_of_siding"
+     	android:layout_marginBottom="@dimen/cellMargin" />
+	        
+		<TableLayout 
+	   		android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+			android:stretchColumns="*" 
+			android:gravity="center"
+			android:layout_marginBottom="@dimen/cellMargin">
+	
+		<TableRow
+		    android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<CheckBox 	    	
+			    android:id="@+id/stuccoCheckBox"	    
+				android:layout_width="match_parent"      			
+				android:layout_height="wrap_content"
+				android:text="@string/stucco" />	    		
+			
+			<CheckBox
+			    android:id="@+id/vinylCheckBox" 	    		    
+				android:layout_width="match_parent"      			
+				android:layout_height="wrap_content"
+				android:text="@string/vinyl" />	    		
+	  	</TableRow>
+	  	
+		<TableRow
+		    android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<CheckBox 	    		    
+			    android:id="@+id/hardyCheckBox"
+				android:layout_width="match_parent"      			
+				android:layout_height="wrap_content"
+				android:text="@string/hardy" />	    		
+		
+			<CheckBox 	    		    
+			    android:id="@+id/brickCheckBox"
+				android:layout_width="match_parent"      			
+				android:layout_height="wrap_content"
+				android:text="@string/brick" />	    		
+	  	</TableRow>
+	  	
+		<TableRow
+		    android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<CheckBox 	   
+			    android:id="@+id/woodCheckBox" 		    
+				android:layout_width="match_parent"      			
+				android:layout_height="wrap_content"
+				android:text="@string/wood" />	    		
+			
+			<CheckBox 	    		    
+			    android:id="@+id/concreteCheckBox"
+				android:layout_width="match_parent"      			
+				android:layout_height="wrap_content"
+				android:text="@string/concrete" />	    		
+	  	</TableRow>
+	  	
+		<TableRow
+		    android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<CheckBox 	    		    
+			    android:id="@+id/metalCheckBox"
+				android:layout_width="match_parent"      			
+				android:layout_height="wrap_content"
+				android:text="@string/metal" />	    						    						    			    
+	  	</TableRow>
+	</TableLayout>				       	
+</LinearLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mrpressure</string>
+    <string name="action_settings">Settings</string>
+    <string name="create_new">Create New</string>
+    <string name="submit">Submit</string>
+    <string name="success">Success</string>
+    <string name="project_created_successfully">Project created successfully</string>
+    <string name="pdf_link">PDF Link:</string>
+    <string name="share_pdf_link">Share pdf link</string>
+    <string name="home">Home</string>
+    <string name="quit">Quit</string>
+    <string name="show_all">Show all</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="send_email">Send E-mail</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="recipient">Recipient</string>
+    <string name="subject">Subject</string>
+    <string name="body">Body</string>
+    <string name="send">Send</string>
+    <string name="send_an_email">Send an email</string>
+    <string name="phone_number">Phone number</string>
+    <string name="no_image_selected">No Image Selected</string>
+    <string name="taken_a_photo">Taken a photo</string>
+    <string name="required_field_empty_error">This field should not be empty.</string>
+        
+    <string name="title_activity_create_new_project">mrpressure</string>
+    <string name="title_activity_show_all_projects">mrpressure</string>
+    <string name="title_activity_create_project_success">mrpressure</string>
+    <string name="title_activity_send_sms">mrpressure</string>    
+    <string name="title_activity_send_email">mrpressure</string>
+    <string name="title_activity_edit_projects">mrpressure</string>    
+        
+    <!-- project panel -->
+    <string name="project">Project</string>
+    <string name="project_name">Project Name *</string>
+    <string name="first_contact_first_name">First Contact First Name *</string>
+    <string name="first_contact_last_name">First Contact Last Name *</string>
+    <string name="first_contact_title">First Contact Title *</string>
+    <string name="first_contact_phone">First Contact Phone *</string>
+    <string name="second_contact_name">Second Contact Name</string>
+    <string name="second_contact_phone">Second Contact Phone</string>
+    <string name="fax">Fax</string>
+    <string name="email">Email *</string>
+    <string name="address">Address *</string>
+    <string name="city">City *</string>
+    <string name="state">State *</string>
+    <string name="zip_code">Zip Code *</string>
+    <string name="check_billing_address">Check if billing address is same as main address</string>
+    <string name="billing_address">Billing Address</string>
+    <string name="billing_city">Billing City</string>
+    <string name="billing_state">Billing State *</string>
+    <string name="billing_zip_code">Billing Zip Code</string>
+    <string name="website">Website *</string>
+    <string name="provide_client_sample">Mr. PressureWash shall provide client sample tenant notices on</string>
+    <string name="client_shall_send_out">Client shall send out (or instruct Mr. PressureWash to send out) tenant notices on</string>
+    <string name="shall_be_granted_access">Mr. PressureWash shall be granted access for pressure washing on</string>
+    <string name="instructions">Instructions</string>
+    <string name="sitemap_image">Sitemap Image:</string>
+    <string name="want_to_calculate_taxes">Check if you do not want to calculate taxes</string>
+    <string name="browse">Browse</string>
+    <string name="camera">Camera</string>
+    
+    <!-- proposal generation information -->
+    <string name="proposal_generation_information">Proposal Generation Information</string>
+    <string name="writer">Writer *</string>
+    <string name="title">Title *</string>
+    <string name="phone">Phone *</string>
+    <string name="quote_effective_until">Quote Effective Until *</string>
+    <string name="project_type">Project Type:</string>
+    <string name="apartments">Apartments</string>
+    <string name="commerical_buildings">Commercial Buildings</string>
+    <string name="parking_lot_garage">Parking Lot / Garage</string>
+    
+    <!-- apartment building -->
+    <string name="apartment_building">Apartment Building</string>
+    <string name="sq_ft">Sq Ft</string>
+    <string name="multiplier">Multiplier</string>
+    <string name="info">Info</string>
+    <string name="buildings">Buildings</string>
+    <string name="units">Units</string>
+    <string name="parking_stalls">Parking Stalls</string>
+    <string name="car_ports">Car Ports</string>
+    <string name="stairways">Stairways</string>
+    <string name="railings">Railings</string>
+    <string name="stories">Stories</string>
+    <string name="breezeway">Breezeway</string>
+    <string name="type_of_siding">Type of Siding:</string>
+    <string name="stucco">Stucco</string>
+    <string name="vinyl">Vinyl</string>
+    <string name="hardy">Hardy</string>
+    <string name="brick">Brick</string>
+    <string name="wood">Wood</string>
+    <string name="concrete">Concrete</string>
+    <string name="metal">Metal</string>
+    <string name="other">Other</string>
+    <string name="lift_needed">Lift Needed</string>
+    <string name="amount">Amount</string>
+    <string name="days_needed">Days Needed</string>
+    
+    <!-- environmental -->
+    <string name="environmental">Environmental:</string>
+    <string name="waste_water_pickup">Waste Water Pickup</string>
+    <string name="type_of_drains">Type of Drains</string>
+    <string name="spinner">Spinner</string>
+    <string name="dump_site_on_premises">Dump Site on Premises</string>
+    <string name="recycle_water">Recycle Water</string>
+    
+    <!-- walkways -->
+    <string name="walkways">Walkways:</string>
+    <string name="gum">Gum</string>
+    <string name="notes">Notes</string>
+    <string name="access_time">Access Time</string>
+    
+    <!-- job details -->
+    <string name="job_details">Job Details:</string>
+    <string name="water_spigot_avaliable">Water Spigot Avaliable?</string>
+    <string name="cold_water_needed">Cold Water Needed</string>
+    <string name="hot_water_needed">Hot Water Needed</string>
+    <string name="hydrant_permit">Hydrant Permit</string>
+    <string name="scafolding_needed">Scafolding Needed</string>
+    <string name="harness_needed">Harness Needed</string>
+    <string name="parking">Parking</string>
+    <string name="parking_on_the_street">Parking on the street</string>
+    <string name="parking_in_a_lot">Parking in a lot</string>
+    <string name="special_procedures">Special Procedures:</string>
+    <string name="mildew_release">Mildew Release</string>
+    <string name="oil_emulsion">Oil Emulsion</string>
+    <string name="enzyme_microbes">Enzyme / Microbes</string>
+    <string name="mildewcide">Mildewcide</string>
+    
+    <!-- roofs -->
+    <string name="roofs">Roofs:</string>
+    <string name="types_of_roofs">Types of Roofs:</string>
+    <string name="shake">Shake</string>
+    <string name="tile">Tile</string>
+    <string name="composition">Composition</string>
+    <string name="general_additional_project_notes">General Additional Project Notes</string>
+    
+    <!-- Miscellaneous -->
+    <string name="miscellaneous">Miscellaneous</string>
+    <string name="value">Value</string>
+    <string name="type">Type</string>
+    
+    <!-- Commerical Buildings -->
+    <string name="commercial_building">Commercial Building</string>
+    <string name="walkways_concrete">Walkways / Concrete:</string>
+    
+    <!-- Parking Lot / Garage -->
+    <string name="parking_lot">Parking Lot:</string>
+    <string name="parking_garage">Parking Garage:</string>
+    <string name="stalls">Stalls</string>
+    <string name="drains">Drains</string>
+    <string name="curb_ft">Curb Ft</string>
+    <string name="walls_sq_ft">Walls Sq Ft</string>
+    <string name="floors">Floors</string>
+    <string name="stairs">Stairs</string>
+    <string name="ceiling_height">Ceiling Height</string>
+    <string name="enzymes">Enzymes</string>
+
+    <!-- Equipment Needed -->
+    <string name="equipment_needed">Equipment Needed</string>    
+    <string name="truck_1">Truck 1</string>
+    <string name="truck_2">Truck 2</string>
+    <string name="truck_3">Truck 3</string>
+    <string name="truck_4">Truck 4</string>
+    <string name="truck_5">Truck 5</string>
+    <string name="truck_6">Truck 6</string>
+    <string name="large_trailer">Large Trailer</string>
+    <string name="small_trailer">Small Trailer</string>
+    <string name="nozzle_tips">Nozzle Tips.</string>    
+    <string name="turbo_nozzle">Turbo Nozzle</string>    
+    <string name="cyclone">Cyclone</string>
+    <string name="safety_vest">Safety Vest</string>
+    <string name="wand_4ft">Wand 4ft.</string>
+    <string name="wand_8ft">Wand 8ft.</string>       
+    <string name="rope_grabber">Rope Grabber</string>
+    <string name="rope">Rope</string>       
+    <string name="paper_work">Paper Work</string>
+    <string name="gate_key">Gate Key</string>    
+    <string name="drain_cover">Drain Cover</string>    
+    <string name="snakes">Snakes</string>
+    <string name="squeegy">Squeegy</string>
+    <string name="shovel">Shovel</string>
+    <string name="rake">Rake</string>
+    <string name="garbage_can">Garbage Can</string>
+    <string name="ladder">Ladder</string>
+    <string name="sandwich_board">Sandwich Board</string>
+    <string name="steel_eagle_spinner">Steel Eagle Spinner</string>
+    <string name="small_vac_spinner">Small Vac Spinner</string>
+    <string name="large_vac_spinner">Large Vac Spinner</string>
+    <string name="wet_sidewalk_sign">Wet Sidewalk Sign</string>        
+    <string name="big_pump">Big pump, Small Pump and Zero Tip</string>
+    <string name="floating_spinner">Floating Spinner (No Wheels)</string>
+    <string name="fiberglass_extension_18">Fiberglass Extension pole 18\'</string>
+    <string name="fiberglass_extension_24">Fiberglass Extension Pole 24\'</string>
+    <string name="safety_harness_lanyard"><![CDATA[Safety Harness & Lanyard]]></string>
+    <string name="hat_glasses_gear">Hat/Safety Glasses/Rain Gear</string>
+    <string name="extra_psi_hose">Extra PSI hose</string>
+    <string name="extra_water_hose">Extra Water Hose</string>     
+    
+    <!-- Pictures -->    
+    <string name="pictures">Pictures</string>
+    <string name="name">Name</string>
+    <string name="footer">Footer</string>
+    <string name="select_picture">Select Picture</string>         
+    
+    <string-array name="states_array">
+        <item>Alabama</item>
+        <item>Alaska</item>
+        <item>Arizona</item>
+        <item>Arkansas</item>
+        <item>California</item>
+        <item>Colorado</item>
+        <item>Connecticut</item>
+        <item>Delaware</item>
+        <item>District of Columbia</item>
+        <item>Florida</item>
+        <item>Georgia</item>
+        <item>Hawaii</item>
+        <item>Idaho</item>
+        <item>Illinois</item>
+        <item>Indiana</item>
+        <item>Iowa</item>
+        <item>Kansas</item>
+        <item>Kentucky</item>
+        <item>Louisiana</item>
+        <item>Maine</item>
+        <item>Maryland</item>
+        <item>Massachusetts</item>
+        <item>Michigan</item>
+        <item>Minnesota</item>
+        <item>Mississippi</item>
+        <item>Missouri</item>
+        <item>Montana</item>
+        <item>Nebraska</item>
+        <item>Nevada</item>
+        <item>New Hampshire</item>
+        <item>New Jersey</item>
+        <item>New Mexico</item>
+        <item>New York</item>
+        <item>North Carolina</item>
+        <item>North Dakota</item>
+        <item>Ohio</item>
+        <item>Oklahoma</item>
+        <item>Oregon</item>
+        <item>Pennsylvania</item>
+        <item>Rhode Island</item>
+        <item>South Carolina</item>
+        <item>South Dakota</item>
+        <item>Tennessee</item>
+        <item>Texas</item>
+        <item>Utah</item>
+        <item>Vermont</item>
+        <item>Virginia</item>
+        <item>Washington</item>
+        <item>West Virginia</item>
+        <item>Wisconsin</item>
+        <item>Wyoming</item>
+    </string-array>   
+
+</resources>

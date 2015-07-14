@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.development.visualscope.SendSmsActivity$PlaceholderFragment" >
+	    
+    <TextView        
+        android:text="@string/send_sms"
+        style="@style/titleText" />    
+        
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:padding="@dimen/activityLayoutPadding"
+	    android:gravity="center">
+	    
+        <Spinner
+            android:id="@+id/contactListSpinner"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content" 	                		                	
+        	android:layout_marginBottom="@dimen/cellMargin" />
+        
+        <EditText 
+	        android:id="@+id/phoneNumberEdit"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content" 
+	    	android:inputType="phone"
+	    	android:hint="@string/phone_number"
+	    	android:layout_marginBottom="@dimen/cellMargin" />
+                      
+        <EditText 
+	        android:id="@+id/smsBodyEdit"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content" 
+	    	android:inputType="textMultiLine"
+	    	android:hint="@string/body"
+	    	android:layout_marginBottom="@dimen/cellMargin"
+	    	android:lines="5"
+			android:gravity="top|left"
+			android:scrollbars="vertical" />
+        
+        <Button
+            android:id="@+id/sendSmsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/customButton"                                                                     
+            android:text="@string/send"
+            android:onClick="sendSms" />
+                            
+    </LinearLayout>	  
+    
+        	
+</LinearLayout>

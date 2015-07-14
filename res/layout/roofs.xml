@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:example="http://schemas.android.com/apk/res/com.development.visualscope"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical">  		
+	<!-- <com.development.visualscope.ExpandablePanel	            
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		example:animationDuration="@integer/expandablePanelAnimationDuration"
+		example:collapsedHeight="@dimen/expandablePanelCollapsedHeight"
+		example:content="@+id/roofsLinearLayout"
+		example:handle="@+id/roofsButton">
+						
+		<Button
+			android:id="@id/roofsButton"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/expandablePanelButton"                                                          
+			android:text="@string/roofs" /> -->	                               
+			 
+		<LinearLayout
+			android:id="@+id/roofsLinearLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<!-- android:padding="@dimen/activityLayoutPadding"> -->
+			
+			<TextView			
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				style="@style/panelText"                 			                                        
+				android:text="@string/roofs"
+				android:layout_marginTop="@dimen/cellMargin" 
+				android:layout_marginBottom="@dimen/cellMargin" />
+			
+			<TableLayout 
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content" 
+				android:stretchColumns="*" 
+				android:gravity="center">
+				
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/cellMargin">
+					<EditText			
+					    android:id="@+id/roofsSqftEdit"                    
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/sq_ft" />
+					
+					<EditText			      
+					    android:id="@+id/roofsSqftMultiplierEdit"              
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/multiplier" />
+					
+					<EditText
+					    android:id="@+id/roofsSqftInfoEdit"			                    
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/info" />	    						    						    			    
+				</TableRow>				       	
+			</TableLayout>
+			
+			<TextView	                    
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 	                	
+				android:text="@string/types_of_roofs"
+				android:layout_marginBottom="@dimen/cellMargin" />
+			
+			<TableLayout 
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content" 
+				android:stretchColumns="*" 
+				android:gravity="center"
+				android:layout_marginBottom="@dimen/cellMargin">
+				
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+					<CheckBox 	    		    
+					    android:id="@+id/roofsShakeCheckBox"
+						android:layout_width="match_parent"      			
+						android:layout_height="wrap_content"
+						android:text="@string/shake" />	    		
+					
+					<CheckBox
+					    android:id="@+id/roofsTileCheckBox" 	    		    
+						android:layout_width="match_parent"      			
+						android:layout_height="wrap_content"
+						android:text="@string/tile" />	    		
+				</TableRow>
+				
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+					<CheckBox 	    		    
+					    android:id="@+id/roofsCompositionCheckBox"
+						android:layout_width="match_parent"      			
+						android:layout_height="wrap_content"
+						android:text="@string/composition" />	    		
+					
+					<CheckBox 	    		    
+					    android:id="@+id/roofsMetalCheckBox"					    
+						android:layout_width="match_parent"      			
+						android:layout_height="wrap_content"
+						android:text="@string/metal" />	    		
+				</TableRow>
+			</TableLayout>
+			
+			<EditText	                    
+			    android:id="@+id/roofsNoteEdit"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 	    
+				android:inputType="textMultiLine"            	
+				android:hint="@string/notes"	                	
+				android:layout_marginBottom="@dimen/cellMargin"
+				android:lines="2"
+				android:gravity="top|left"
+				android:scrollbars="vertical" />
+			
+			<EditText
+				android:id="@+id/additionalNoteEdit"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 	    
+				android:inputType="textMultiLine"            	
+				android:hint="@string/general_additional_project_notes"	                	
+				android:layout_marginBottom="@dimen/cellMargin"
+				android:lines="2"
+				android:gravity="top|left"
+				android:scrollbars="vertical" />
+		</LinearLayout>
+		 
+	<!-- </com.development.visualscope.ExpandablePanel> -->							       	
+</LinearLayout>

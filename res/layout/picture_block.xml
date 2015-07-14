@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- picture -->
+<LinearLayout
+   	xmlns:android="http://schemas.android.com/apk/res/android"
+ 	xmlns:custom="http://schemas.android.com/apk/res/com.development.visualscope"
+    android:id="@+id/pictureBlockLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+	<com.development.visualscope.ExpandablePanel	            
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		custom:animationDuration="@integer/expandablePanelAnimationDuration"
+		custom:collapsedHeight="@dimen/expandablePanelCollapsedHeight"
+		custom:content="@+id/pictureLinearLayout"
+		custom:handle="@+id/pictureButton">
+	 
+		<Button
+			android:id="@+id/pictureButton"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/expandablePanelButton"                                                          
+			android:text="@string/pictures" />	                                                                       	            
+											   
+			<LinearLayout
+				android:id="@+id/pictureLinearLayout"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="@dimen/activityLayoutPadding">	                	               
+												
+			    <com.development.visualscope.PictureTableRow				 	
+	    			android:id="@+id/pictureTableRow1"
+	    			android:layout_width="match_parent"
+	    			android:layout_height="wrap_content" />
+			    
+			    <com.development.visualscope.PictureTableRow				 	
+	    			android:id="@+id/pictureTableRow2"
+	    			android:layout_width="match_parent"
+	    			android:layout_height="wrap_content" />
+			    
+			    <com.development.visualscope.PictureTableRow				 	
+	    			android:id="@+id/pictureTableRow3"
+	    			android:layout_width="match_parent"
+	    			android:layout_height="wrap_content" />
+			    
+			    <com.development.visualscope.PictureTableRow				 	
+	    			android:id="@+id/pictureTableRow4"
+	    			android:layout_width="match_parent"
+	    			android:layout_height="wrap_content" />
+			    
+			    <com.development.visualscope.PictureTableRow				 	
+	    			android:id="@+id/pictureTableRow5"
+	    			android:layout_width="match_parent"
+	    			android:layout_height="wrap_content" />
+			    
+			    <com.development.visualscope.PictureTableRow				 	
+	    			android:id="@+id/pictureTableRow6"
+	    			android:layout_width="match_parent"
+	    			android:layout_height="wrap_content" />
+			    
+			    <com.development.visualscope.PictureTableRow				 	
+	    			android:id="@+id/pictureTableRow7"
+	    			android:layout_width="match_parent"
+	    			android:layout_height="wrap_content" />
+			    
+			    <com.development.visualscope.PictureTableRow				 	
+	    			android:id="@+id/pictureTableRow8"
+	    			android:layout_width="match_parent"
+	    			android:layout_height="wrap_content" />
+			    
+			    <com.development.visualscope.PictureTableRow				 	
+	    			android:id="@+id/pictureTableRow9"
+	    			android:layout_width="match_parent"
+	    			android:layout_height="wrap_content" />
+			    
+			    <com.development.visualscope.PictureTableRow				 	
+	    			android:id="@+id/pictureTableRow10"
+	    			android:layout_width="match_parent"
+	    			android:layout_height="wrap_content" />
+			    
+			    <com.development.visualscope.PictureTableRow				 	
+	    			android:id="@+id/pictureTableRow11"
+	    			android:layout_width="match_parent"
+	    			android:layout_height="wrap_content" />
+			    
+			    <com.development.visualscope.PictureTableRow				 	
+	    			android:id="@+id/pictureTableRow12"
+	    			android:layout_width="match_parent"
+	    			android:layout_height="wrap_content" />
+			    
+			    <com.development.visualscope.PictureTableRow				 	
+	    			android:id="@+id/pictureTableRow13"
+	    			android:layout_width="match_parent"
+	    			android:layout_height="wrap_content" />
+			    
+			    <com.development.visualscope.PictureTableRow				 	
+	    			android:id="@+id/pictureTableRow14"
+	    			android:layout_width="match_parent"
+	    			android:layout_height="wrap_content" />
+			    
+			    <com.development.visualscope.PictureTableRow				 	
+	    			android:id="@+id/pictureTableRow15"
+	    			android:layout_width="match_parent"
+	    			android:layout_height="wrap_content" />
+			    
+			    <com.development.visualscope.PictureTableRow				 	
+	    			android:id="@+id/pictureTableRow16"
+	    			android:layout_width="match_parent"
+	    			android:layout_height="wrap_content" />
+			    
+			    <com.development.visualscope.PictureTableRow				 	
+	    			android:id="@+id/pictureTableRow17"
+	    			android:layout_width="match_parent"
+	    			android:layout_height="wrap_content" />
+			    						    																					 	
+			</LinearLayout>				 		         				  
+	</com.development.visualscope.ExpandablePanel>            							 		
+</LinearLayout>

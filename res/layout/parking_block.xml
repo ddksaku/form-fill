@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- parking -->
+<LinearLayout
+   	xmlns:android="http://schemas.android.com/apk/res/android"
+ 	xmlns:custom="http://schemas.android.com/apk/res/com.development.visualscope"
+    android:id="@+id/apartmentBlockLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+	<com.development.visualscope.ExpandablePanel	            
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		custom:animationDuration="@integer/expandablePanelAnimationDuration"
+		custom:collapsedHeight="@dimen/expandablePanelCollapsedHeight"
+		custom:content="@+id/parkingLotLinearLayout"
+		custom:handle="@+id/parkingLotButton">
+	 
+		<Button
+			android:id="@+id/parkingLotButton"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/expandablePanelButton"                                                          
+			android:text="@string/parking_lot_garage" />	                                                                       	            
+					
+		<LinearLayout
+			android:id="@+id/parkingLotLinearLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="@dimen/activityLayoutPadding">	                	               
+							
+		    <TextView			
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				style="@style/panelText"                 			                                        
+				android:text="@string/parking_lot"
+				android:layout_marginTop="@dimen/cellMargin" 
+				android:layout_marginBottom="@dimen/cellMargin" />
+		    
+			<TableLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content" 
+				android:stretchColumns="*"
+				android:gravity="center">
+				
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/cellMargin">				    						   		    				    
+					<EditText			
+					    android:id="@+id/lotSqftEdit"                    
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/sq_ft" />
+					
+					<EditText
+					    android:id="@+id/lotSqftMultiplierEdit"								
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/multiplier" />					
+					
+					<EditText								
+					    android:id="@+id/lotSqftInfoEdit"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/info" />	    												    			   
+				</TableRow>
+				
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/cellMargin">
+					<EditText			                
+					    android:id="@+id/lotStallsEdit"    
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/stalls" />
+					
+					<EditText							
+					    android:id="@+id/lotStallsMultiplierEdit"	
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/multiplier" />
+					
+					<EditText								
+					    android:id="@+id/lotStallsInfoEdit"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/info" />	    						    						    			    
+				</TableRow>
+				
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/cellMargin">
+					<EditText			       
+					    android:id="@+id/lotDrainsEdit"             
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/drains" />
+				</TableRow>
+				
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/cellMargin">
+					<EditText			              
+					    android:id="@+id/lotCurbEdit"      
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/curb_ft" />
+					
+					<EditText						
+					    android:id="@+id/lotCurbMultiplierEdit"		
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/multiplier" />
+					
+					<EditText								
+					    android:id="@+id/lotCurbInfoEdit"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/info" />	    						    						    			    
+				</TableRow>				       					   										 										
+			</TableLayout>				
+	               
+			<TextView			
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				style="@style/panelText"                 			                                        
+				android:text="@string/parking_garage"
+				android:layout_marginTop="@dimen/cellMargin" 
+				android:layout_marginBottom="@dimen/cellMargin" />
+			                                                      	            								                	               				
+			<TableLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content" 
+				android:stretchColumns="*"
+				android:gravity="center">
+				
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/cellMargin">				    						   		    				    
+					<EditText			           
+					    android:id="@+id/garageSqftEdit"         
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/sq_ft" />
+					
+					<EditText
+					    android:id="@+id/garageSqftMultiplierEdit"								
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/multiplier" />					
+					
+					<EditText								
+					    android:id="@+id/garageSqftInfoEdit"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/info" />	    												    			   
+				</TableRow>
+				
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/cellMargin">
+					<EditText			               
+					    android:id="@+id/garageStallsEdit"     
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/parking_stalls" />
+					
+					<EditText						
+					    android:id="@+id/garageStallsMultiplierEdit"		
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/multiplier" />
+					
+					<EditText								
+					    android:id="@+id/garageStallsInfoEdit"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/info" />	    						    						    			    
+				</TableRow>
+				
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/cellMargin">
+					<EditText			               
+					    android:id="@+id/garageWallsEdit"     
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/walls_sq_ft" />
+					
+					<EditText						
+					    android:id="@+id/garageWallsMultiplierEdit"		
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/multiplier" />
+					
+					<EditText								
+					    android:id="@+id/garageWallsInfoEdit"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/info" />	    						    						    			    
+				</TableRow>
+				
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/cellMargin">
+					<EditText			     
+					    android:id="@+id/garageRailingsEdit"               
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/railings" />
+				</TableRow>
+				
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/cellMargin">
+					<EditText			                 
+					    android:id="@+id/garageFloorsEdit"   
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/floors" />
+				</TableRow>
+				
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/cellMargin">
+					<EditText			 
+					    android:id="@+id/garageStairsEdit"                   
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/stairs" />
+					
+					<EditText						
+					    android:id="@+id/garageStairsMultiplierEdit"		
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/multiplier" />
+					
+					<EditText						
+					    android:id="@+id/garageStairsInfoEdit"		
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/info" />	    						    						    			    
+				</TableRow>				       					   				
+	
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/cellMargin">
+					<EditText			   
+					    android:id="@+id/garageCeilingEdit"                 
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/ceiling_height" />									
+					
+					<EditText								
+					    android:id="@+id/garageCeilingInfoEdit"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/info" />	    						    						    			    
+				</TableRow>				       					   										 										
+			</TableLayout>
+			
+			<com.development.visualscope.Environmental
+			    android:id="@+id/parkingEnvironmental"	  	                    				        
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />			
+				
+			<com.development.visualscope.Walkways	  
+			    android:id="@+id/parkingWalkways"                     				        
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 
+				custom:walkwaysPanelName="@string/walkways" />
+			
+			<com.development.visualscope.JobDetails	      
+			    android:id="@+id/parkingJobDetails"	                   				        
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				custom:isParkingPanel="true" />		
+		</LinearLayout>		
+	</com.development.visualscope.ExpandablePanel>						 											 			
+</LinearLayout>

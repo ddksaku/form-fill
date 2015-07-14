@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent" 
+	android:stretchColumns="*" 
+	android:gravity="center">
+  		
+  	<TableRow
+  	    android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+   		android:layout_marginBottom="@dimen/cellMargin">
+   		<EditText			        
+   		    android:id="@+id/valueEdit"            
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" 
+			android:inputType="text"
+            android:hint="@string/value" />
+   		
+   		<EditText			       
+   		    android:id="@+id/multiplierValueEdit"             
+            android:layout_width="match_parent"
+           	android:layout_height="wrap_content" 
+           	android:inputType="text"
+           	android:hint="@string/multiplier" />
+   		
+   		<EditText
+   		    android:id="@+id/infoValueEdit"			                    
+			android:layout_width="match_parent"
+           	android:layout_height="wrap_content" 
+           	android:inputType="text"
+           	android:hint="@string/info" />	    						    						    			    
+              	
+   		<EditText
+   		    android:id="@+id/typeValueEdit"			                    
+			android:layout_width="match_parent"
+          	android:layout_height="wrap_content" 
+          	android:inputType="text"
+          	android:hint="@string/type" />
+      	</TableRow>				       	
+</TableLayout>

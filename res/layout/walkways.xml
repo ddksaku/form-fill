@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:example="http://schemas.android.com/apk/res/com.development.visualscope"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical">  		
+	<!-- <com.development.visualscope.ExpandablePanel	            
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		example:animationDuration="@integer/expandablePanelAnimationDuration"
+		example:collapsedHeight="@dimen/expandablePanelCollapsedHeight"
+		example:content="@+id/walkwaysLinearLayout"
+		example:handle="@+id/walkwaysButton">
+			 
+		<Button
+			android:id="@id/walkwaysButton"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/expandablePanelButton" /> -->	                               
+			 
+		<LinearLayout
+			android:id="@+id/walkwaysLinearLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<!-- android:padding="@dimen/activityLayoutPadding"> -->
+			
+			<TextView			
+			    android:id="@+id/walkwaysText"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				style="@style/panelText"                 			                                        				
+				android:layout_marginTop="@dimen/cellMargin" 
+				android:layout_marginBottom="@dimen/cellMargin" />
+			
+			<TableLayout 
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content" 
+				android:stretchColumns="*" 
+				android:gravity="center">
+				
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/cellMargin">
+					<EditText			    
+					    android:id="@+id/walkwaysSqftEdit"                
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/sq_ft" />
+					
+					<EditText
+					    android:id="@+id/walkwaysMultiplierEdit"			                    
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/multiplier" />
+					
+					<EditText			                  
+					    android:id="@+id/walkwaysInfoEdit"  
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" 
+						android:inputType="text"
+						android:hint="@string/info" />	    						    						    			    
+				</TableRow>
+			</TableLayout>
+			
+			<EditText 
+				android:id="@+id/walkwaysGumEdit"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 
+				android:inputType="text"
+				android:hint="@string/gum"
+				android:layout_marginBottom="@dimen/cellMargin" />
+			
+			<EditText
+			    android:id="@+id/walkwaysNoteEdit" 	                    
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 	    
+				android:inputType="textMultiLine"            	
+				android:hint="@string/notes"	                	
+				android:layout_marginBottom="@dimen/cellMargin"
+				android:lines="2"
+				android:gravity="top|left"
+				android:scrollbars="vertical" />
+			
+			<EditText 
+				android:id="@+id/walkwaysAccessTimeEdit"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 
+				android:inputType="text"
+				android:hint="@string/access_time"
+				android:layout_marginBottom="@dimen/cellMargin" />
+		</LinearLayout>	
+	<!-- </com.development.visualscope.ExpandablePanel> -->				       	
+</LinearLayout>

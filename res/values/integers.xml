@@ -1,0 +1,5 @@
+<resources>
+    
+    <integer name="expandablePanelAnimationDuration">300</integer>           
+
+</resources>
